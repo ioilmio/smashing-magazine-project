@@ -1,76 +1,99 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 main {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 200px auto auto;
-    grid-template-areas: "nav nav nav nav nav nav" 
-                         "latest-1 latest-1 latest-1 latest-2 latest-2 latest-2" 
-                         "latest-3 latest-3 latest-3 latest-4 latest-4 latest-4";
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 200px 500px 500px;
+  grid-template-areas:
+    "nav nav nav nav nav nav"
+    "latest-1 latest-1 latest-1 latest-2 latest-2 latest-2"
+    "latest-3 latest-3 latest-3 latest-4 latest-4 latest-4";
 }
 
-nav{
-    grid-area: nav;
-    background-color: rgb(44, 44, 44);
-    display: flex;
-    height: 200px;
-    justify-content: space-around;
-    align-items: center;
+nav {
+  grid-area: nav;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  height: 200px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 nav > div {
-    background-color: rgb(74, 74, 74);
-    width:100px;
-    height:50px;
-    justify-content: center;
-    align-items: center;
+  background-color: rgb(74, 74, 74);
+  width: 150px;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
 }
 
-nav > div > a {
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    color: black;
+.link {
+  display: flex;
+  align-items: center;
+  height: 150px;
 }
 
-.link{
-    height: 150px;
+.link a {
+  text-decoration: none;
+  color: black;
 }
 
- .logo{
-     display: flex;
-     align-items: center;
-     width:120px;
+.logo {
+  display: flex;
+  align-items: center;
+  width: 120px;
+}
 
- }
+.search {
+  display: flex;
+  align-items: center;
+  width: 120px;
+}
+.latest-article-topic {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.author-img {
+  align-items: center;
+  height: 30px;
+  padding: 25px;
+}
+.author-name {
+  align-items: center;
+  height: 30px;
+  padding: 25px;
+}
 
- .search{
-     display: flex;
-     align-items: center;
-     width:120px;
+.title {
+  height: 30px;
+}
 
- }
+.latest-1 {
+  background-color: red;
 
- .latest-1 {
-     grid-area: latest-1;
- }
- 
- .latest-2 {
-    grid-area: latest-2;
+  grid-area: latest-1;
+}
+
+.latest-2 {
+  background-color: yellow;
+
+  grid-area: latest-2;
 }
 
 .latest-3 {
-    grid-area: latest-3;
+  background-color: green;
+
+  grid-area: latest-3;
 }
 
 .latest-4 {
-    grid-area: latest-4;
-}
-.latest-article-topic {
-    background-color: red;
+  background-color: blue;
+
+  grid-area: latest-4;
 }
