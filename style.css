@@ -8,14 +8,23 @@
 main {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 200px 500px 500px 500px 500px 500px;
+  grid-template-rows: 200px 500px 500px 500px 500px 500px 800px 300px 300px 300px 300px 300px 700px 800px 1000px;
   grid-template-areas:
     "nav nav nav nav nav nav"
     "latest-1 latest-1 latest-1 latest-2 latest-2 latest-2"
     "latest-3 latest-3 latest-3 latest-4 latest-4 latest-4"
     "article-1 article-1 article-2 article-2 article-3 article-3"
     "article-4 article-4 article-5 article-5 article-6 article-6"
-    "article-7 article-7 article-8 article-8 article-9 article-9";
+    "article-7 article-7 article-8 article-8 article-9 article-9"
+    "shipping shipping shipping shipping shipping shipping" 
+    "person person person person person person "
+    "comments-1 comments-1 comments-1 comments-2 comments-2 comments-2"
+    "comments-3 comments-3 comments-3 comments-4 comments-4 comments-4"
+    "comments-5 comments-5 comments-5 comments-6 comments-6 comments-6" 
+    "book book book book book book "
+    "guide-1 guide-1 guide-2 guide-2 guide-3 guide-3"
+    "guide-4 guide-4 guide-5 guide-5 guide-5 guide-5"
+    "footer footer footer footer footer footer";
 }
 
 nav {
@@ -35,18 +44,19 @@ nav > div {
   align-items: center;
 }
 
-.header{
-    grid-column: 3 / 6;
-    grid-row: 1/2;
-    position: absolute;
-    top: 250px;
-    width: 250px;
-    left: 40%;
+.header {
+  grid-column: 3 / 6;
+  grid-row: 1/2;
+  position: absolute;
+  top: 250px;
+  width: 250px;
+  left: 40%;
 }
+
 .header > h1 {
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    margin: 0 auto ;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 0 auto;
 }
 
 .link {
@@ -83,6 +93,7 @@ nav > div {
   height: 30px;
   padding: 25px;
 }
+
 .author-name {
   align-items: center;
   height: 30px;
@@ -97,55 +108,127 @@ nav > div {
 
 .latest-1 {
   background-color: red;
-
   grid-area: latest-1;
 }
 
 .latest-2 {
   background-color: yellow;
-
   grid-area: latest-2;
 }
 
 .latest-3 {
   background-color: green;
-
   grid-area: latest-3;
 }
 
 .latest-4 {
   background-color: blue;
-
   grid-area: latest-4;
 }
-.article-1{
-      background-color: blue;
 
-    grid-area: article-1;
+.article-1 {
+  background-color: blue;
+  grid-area: article-1;
 }
-.article-2{
-    grid-area: article-2;
-}
-.article-3{  background-color: blue;
 
-    grid-area: article-3;
+.article-2 {
+  grid-area: article-2;
 }
-.article-4{
-    grid-area: article-4;
+
+.article-3 {
+  background-color: blue;
+  grid-area: article-3;
 }
-.article-5{  background-color: yellow;
-    grid-area: article-5;
+
+.article-4 {
+  grid-area: article-4;
 }
-.article-6{
-    grid-area: article-6;
+
+.article-5 {
+  background-color: yellow;
+  grid-area: article-5;
 }
-.article-7{
-    background-color: yellow;
-    grid-area: article-7;
+
+.article-6 {
+  grid-area: article-6;
 }
-.article-8{
-    grid-area: article-8;
+
+.article-7 {
+  background-color: yellow;
+  grid-area: article-7;
 }
-.article-9{
-    grid-area: article-9;
+
+.article-8 {
+  grid-area: article-8;
+}
+
+.article-9 {
+  grid-area: article-9;
+}
+
+.shipping {
+  grid-area: shipping;
+  background-color: red;
+}
+
+.person {
+  grid-area: person;
+  background-color: grey;
+}
+
+.comments-1 {
+  grid-area: comments-1;
+  background-color: grey;
+}
+
+.comments-2 {
+  grid-area: comments-2;
+  background-color:blue;
+}
+.comments-3 {
+  grid-area: comments-3;
+  background-color: pink;
+}
+.comments-4 {
+  grid-area: comments-4;
+  background-color: green;
+}
+.comments-5 {
+  grid-area: comments-5;
+  background-color: grey;
+}
+.comments-6 {
+  grid-area: comments-6;
+  background-color: black;
+}
+
+.book {
+  grid-area: book;
+  background-color: skyblue;
+}
+.guide-1 {
+  grid-area: guide-1;
+  background-color: slateblue;
+}
+
+.guide-2 {
+  grid-area: guide-2;
+  background-color: purple;
+}
+
+.guide-3 {
+  grid-area: guide-3;
+  background-color: skyblue;
+}
+.guide-4 {
+  grid-area: guide-4;
+  background-color: skyblue;
+}
+.guide-5 {
+  grid-area: guide-5;
+  background-color: brown;
+}
+.footer {
+  grid-area: footer;
+  background-color: red;
 }
