@@ -4,7 +4,17 @@
     box-sizing: border-box;
 }
 
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 200px auto auto;
+    grid-template-areas: "nav nav nav nav nav nav" 
+                         "latest-1 latest-1 latest-1 latest-2 latest-2 latest-2" 
+                         "latest-3 latest-3 latest-3 latest-4 latest-4 latest-4";
+}
+
 nav{
+    grid-area: nav;
     background-color: rgb(44, 44, 44);
     display: flex;
     height: 200px;
@@ -45,3 +55,22 @@ nav > div > a {
      width:120px;
 
  }
+
+ .latest-1 {
+     grid-area: latest-1;
+ }
+ 
+ .latest-2 {
+    grid-area: latest-2;
+}
+
+.latest-3 {
+    grid-area: latest-3;
+}
+
+.latest-4 {
+    grid-area: latest-4;
+}
+.latest-article-topic {
+    background-color: red;
+}
