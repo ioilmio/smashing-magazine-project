@@ -8,11 +8,14 @@
 main {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 200px 500px 500px;
+  grid-template-rows: 200px 500px 500px 500px 500px 500px;
   grid-template-areas:
     "nav nav nav nav nav nav"
     "latest-1 latest-1 latest-1 latest-2 latest-2 latest-2"
-    "latest-3 latest-3 latest-3 latest-4 latest-4 latest-4";
+    "latest-3 latest-3 latest-3 latest-4 latest-4 latest-4"
+    "article-1 article-1 article-2 article-2 article-3 article-3"
+    "article-4 article-4 article-5 article-5 article-6 article-6"
+    "article-7 article-7 article-8 article-8 article-9 article-9";
 }
 
 nav {
@@ -30,6 +33,20 @@ nav > div {
   height: 50px;
   justify-content: space-around;
   align-items: center;
+}
+
+.header{
+    grid-column: 3 / 6;
+    grid-row: 1/2;
+    position: absolute;
+    top: 250px;
+    width: 250px;
+    left: 40%;
+}
+.header > h1 {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0 auto ;
 }
 
 .link {
@@ -54,11 +71,13 @@ nav > div {
   align-items: center;
   width: 120px;
 }
+
 .latest-article-topic {
   display: flex;
   justify-content: center;
   padding: 50px;
 }
+
 .author-img {
   align-items: center;
   height: 30px;
@@ -70,8 +89,10 @@ nav > div {
   padding: 25px;
 }
 
-.title {
-  height: 30px;
+.article-title {
+  align-self: center;
+  height: auto;
+  width: 100%;
 }
 
 .latest-1 {
@@ -96,4 +117,35 @@ nav > div {
   background-color: blue;
 
   grid-area: latest-4;
+}
+.article-1{
+      background-color: blue;
+
+    grid-area: article-1;
+}
+.article-2{
+    grid-area: article-2;
+}
+.article-3{  background-color: blue;
+
+    grid-area: article-3;
+}
+.article-4{
+    grid-area: article-4;
+}
+.article-5{  background-color: yellow;
+    grid-area: article-5;
+}
+.article-6{
+    grid-area: article-6;
+}
+.article-7{
+    background-color: yellow;
+    grid-area: article-7;
+}
+.article-8{
+    grid-area: article-8;
+}
+.article-9{
+    grid-area: article-9;
 }
