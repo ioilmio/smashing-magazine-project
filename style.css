@@ -22,7 +22,7 @@ main {
     "comments-1 comments-1 comments-1 comments-2 comments-2 comments-2"
     "comments-3 comments-3 comments-3 comments-4 comments-4 comments-4"
     "comments-5 comments-5 comments-5 comments-6 comments-6 comments-6" 
-    "book book book book book book "
+    "book book book book book-image book-image "
     "guide-1 guide-1 guide-2 guide-2 guide-3 guide-3"
     "guide-4 guide-4 guide-5 guide-5 guide-5 guide-5"
     "footer footer footer footer footer footer";
@@ -276,57 +276,145 @@ nav > div {
     margin-bottom: 64px;
     font-size: large;
 }
+
+.comment {
+  background-color: rgb(58, 58, 58);
+  display: flex;
+  padding: 24px;
+  border: 5px solid rgb(29, 29, 29);
+}
+.comment-image {
+  padding: 24px;
+  margin-left: 20px;
+  border: 5px solid rgb(29, 29, 29);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 324px;
+  height: 100px;
+}
+
+.comment-content {
+  margin-left: 50px;
+  display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-bottom: 64px;
+    font-size: large;
+}
+
 .comments-1 {
   grid-area: comments-1;
-  background-color: grey;
 }
 
 .comments-2 {
   grid-area: comments-2;
-  background-color:blue;
 }
 .comments-3 {
   grid-area: comments-3;
-  background-color: pink;
 }
 .comments-4 {
   grid-area: comments-4;
-  background-color: green;
 }
 .comments-5 {
   grid-area: comments-5;
-  background-color: grey;
 }
 .comments-6 {
   grid-area: comments-6;
-  background-color: black;
 }
 
 .book {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 0 0 40px;
   grid-area: book;
-  background-color: skyblue;
+  border: 5px solid rgb(29, 29, 29);
+  background-color: rgb(58, 58, 58);
 }
+.book-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: book-image;
+  border: 5px solid rgb(29, 29, 29);
+  background-color: rgb(58, 58, 58);
+}
+
+.book h1{
+  margin: 35px 0 35px 0;
+}
+
+
+.book button{
+  width: 262px;
+  height: 50px;
+  border-radius: 7px;
+  color: black;
+} 
+
+.guide{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: larger;
+  padding: 25px;
+  background-color: rgb(58, 58, 58);
+  border: 5px solid rgb(29, 29, 29);
+}
+
+.guide ul {
+  margin: 25px 0 0 -110px;
+}
+.guide li {
+  line-height: 40px;
+}
+
 .guide-1 {
   grid-area: guide-1;
-  background-color: slateblue;
 }
 
 .guide-2 {
   grid-area: guide-2;
-  background-color: purple;
 }
 
 .guide-3 {
   grid-area: guide-3;
-  background-color: skyblue;
 }
 .guide-4 {
   grid-area: guide-4;
-  background-color: skyblue;
 }
 .guide-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: larger;
+  padding: 60px;
   grid-area: guide-5;
-  background-color: brown;
+  background-color: rgb(58, 58, 58);
+  border: 5px solid rgb(29, 29, 29);
+  color: black;
+}
+
+.newsletter-image{
+  border: 5px solid rgb(29, 29, 29);
+  width: 674px;
+  height: 400px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.guide-5 button{
+  /* margin-top: 50px;
+  margin-bottom: 50px; */
+  width: 262px;
+    height: 50px;
+    border-radius: 7px;
+    color: black;
+
 }
 .footer {
   grid-area: footer;
