@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
   font-family: "Roboto", sans-serif;
 }
 
@@ -57,17 +58,19 @@ nav > div {
   background-color: rgb(255, 255, 255);
   text-align: center;
   margin: 0 auto;
+  color: black;
 }
 
 .link {
   display: flex;
   align-items: center;
   height: 150px;
+  border: 5px solid rgb(29, 29, 29);
+
 }
 
 .link a {
   text-decoration: none;
-  color: black;
 }
 
 .logo {
@@ -84,50 +87,93 @@ nav > div {
 
 .latest-article-topic {
   display: flex;
+  align-items: center;
   justify-content: center;
   padding: 50px;
 }
 
 .author-img {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   padding: 25px;
+  border: 5px solid rgb(29, 29, 29);
 }
 
 .author-name {
+  display: flex;
   align-items: center;
+  justify-self: start;
   height: 30px;
+  width: 100px;
   padding: 25px;
+  margin-left: 50px;
+  border: 5px solid rgb(29, 29, 29);
 }
 
 .article-title {
-  align-self: center;
+  justify-content: left;
+  align-items: center;
   height: auto;
-  width: 100%;
+  padding: 50px;
+  font-size: larger;
+  font-weight: 600;
+  margin: 250px 0 0 -210px;
+  border: 5px solid rgb(29, 29, 29);
 }
 
 .latest-1 {
-  background-color: red;
+  background-color: rgb(58, 58, 58);
   grid-area: latest-1;
+  border: 5px solid rgb(29, 29, 29);
 }
 
 .latest-2 {
-  background-color: yellow;
+  background-color: rgb(58, 58, 58);
   grid-area: latest-2;
+  border: 5px solid rgb(29, 29, 29);
+
 }
 
 .latest-3 {
-  background-color: green;
+  background-color: rgb(58, 58, 58);
   grid-area: latest-3;
+  border: 5px solid rgb(29, 29, 29);
+
 }
 
 .latest-4 {
-  background-color: blue;
+  background-color: rgb(58, 58, 58);
   grid-area: latest-4;
+  border: 5px solid rgb(29, 29, 29);
+}
+
+.post{
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: rgb(58, 58, 58);
+  border: 5px solid rgb(29, 29, 29);
+
+}
+
+.post p {
+  margin-top: 20px;
+}
+
+.post a {
+  text-decoration: none;
+  font-size: large;
+}
+
+.post p:last-child{
+  font-size: large;
+  font-weight: 600;
 }
 
 .article-1 {
-  background-color: blue;
   grid-area: article-1;
 }
 
@@ -136,7 +182,6 @@ nav > div {
 }
 
 .article-3 {
-  background-color: blue;
   grid-area: article-3;
 }
 
@@ -145,7 +190,6 @@ nav > div {
 }
 
 .article-5 {
-  background-color: yellow;
   grid-area: article-5;
 }
 
@@ -154,7 +198,6 @@ nav > div {
 }
 
 .article-7 {
-  background-color: yellow;
   grid-area: article-7;
 }
 
