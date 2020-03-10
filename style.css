@@ -104,6 +104,7 @@ nav > div {
   align-self: center;
   height: auto;
   width: 100%;
+  justify-content: baseline;
 }
 
 .latest-1 {
