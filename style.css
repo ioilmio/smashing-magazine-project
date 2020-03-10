@@ -17,11 +17,11 @@ main {
     "article-1 article-1 article-2 article-2 article-3 article-3"
     "article-4 article-4 article-5 article-5 article-6 article-6"
     "article-7 article-7 article-8 article-8 article-9 article-9"
-    "shipping shipping shipping shipping shipping shipping" 
+    "shipping shipping shipping shipping shipping shipping"
     "person person person person person person "
     "comments-1 comments-1 comments-1 comments-2 comments-2 comments-2"
     "comments-3 comments-3 comments-3 comments-4 comments-4 comments-4"
-    "comments-5 comments-5 comments-5 comments-6 comments-6 comments-6" 
+    "comments-5 comments-5 comments-5 comments-6 comments-6 comments-6"
     "book book book book book-image book-image "
     "guide-1 guide-1 guide-2 guide-2 guide-3 guide-3"
     "guide-4 guide-4 guide-5 guide-5 guide-5 guide-5"
@@ -65,8 +65,8 @@ nav > div {
   display: flex;
   align-items: center;
   height: 150px;
-  /* border: 5px solid rgb(29, 29, 29); */
 
+  /* border: 5px solid rgb(29, 29, 29); */
 }
 
 a {
@@ -88,19 +88,18 @@ a {
 
 .latest-article-topic {
   display: flex;
-    flex-direction: column;
-    padding: 50px;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: #313131;
+  flex-direction: column;
+  padding: 50px;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #313131;
 }
 
 .outer-info {
   display: flex;
   margin-bottom: 50px;
-    margin-top: 88px;
+  margin-top: 88px;
 }
-
 
 .author-img {
   display: flex;
@@ -146,14 +145,12 @@ a {
   background-color: rgb(58, 58, 58);
   grid-area: latest-2;
   border: 5px solid rgba(189, 183, 183, 0.27);
-
 }
 
 .latest-3 {
   background-color: rgb(58, 58, 58);
   grid-area: latest-3;
   border: 5px solid rgba(189, 183, 183, 0.27);
-
 }
 
 .latest-4 {
@@ -162,13 +159,12 @@ a {
   border: 5px solid rgba(189, 183, 183, 0.27);
 }
 
-.post{
+.post {
   display: flex;
   flex-direction: column;
   padding: 50px;
   background-color: #313131;
   border: 5px solid rgba(189, 183, 183, 0.27);
-
 }
 
 .post p {
@@ -180,7 +176,11 @@ a {
   font-size: large;
 }
 
-.post p:last-child{
+.shipping-info p {
+  margin-bottom: 36px;
+}
+
+.post p:last-child {
   font-size: large;
   font-weight: 600;
 }
@@ -236,20 +236,17 @@ a {
   padding: 43px;
 }
 
-.shipping-info p {
-  margin-bottom: 36px;
-}
-
 .shipping-info h1 {
   text-align-last: center;
 }
+
 .shipping-info button {
   margin-top: 50px;
   margin-bottom: 50px;
   width: 262px;
-    height: 50px;
-    border-radius: 7px;
-    color: black;
+  height: 50px;
+  border-radius: 7px;
+  color: black;
 }
 
 .shipping-info .image {
@@ -258,8 +255,8 @@ a {
   height: 400px;
   display: flex;
   background-color: rgb(68, 67, 67);
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .person {
@@ -285,10 +282,10 @@ a {
 .person-content {
   margin-left: 50px;
   display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    margin-bottom: 64px;
-    font-size: large;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-bottom: 64px;
+  font-size: large;
 }
 
 .comment {
@@ -297,6 +294,7 @@ a {
   padding: 24px;
   border: 5px solid rgba(189, 183, 183, 0.27);
 }
+
 .comment-image {
   padding: 24px;
   margin-left: 20px;
@@ -312,10 +310,10 @@ a {
 .comment-content {
   margin-left: 50px;
   display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    margin-bottom: 64px;
-    font-size: large;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-bottom: 64px;
+  font-size: large;
 }
 
 .comments-1 {
@@ -325,15 +323,19 @@ a {
 .comments-2 {
   grid-area: comments-2;
 }
+
 .comments-3 {
   grid-area: comments-3;
 }
+
 .comments-4 {
   grid-area: comments-4;
 }
+
 .comments-5 {
   grid-area: comments-5;
 }
+
 .comments-6 {
   grid-area: comments-6;
 }
@@ -347,7 +349,8 @@ a {
   border: 5px solid rgba(189, 183, 183, 0.27);
   background-color: rgba(58, 58, 58, 0.67);
 }
-.book-image{
+
+.book-image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -356,19 +359,18 @@ a {
   background-color: rgb(68, 67, 67);
 }
 
-.book h2{
+.book h2 {
   margin: 35px 0 35px 0;
 }
 
-
-.book button{
+.book button {
   width: 262px;
   height: 50px;
   border-radius: 7px;
   color: black;
-} 
+}
 
-.guide{
+.guide {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -381,6 +383,7 @@ a {
 .guide ul {
   margin: 25px 0 0 -110px;
 }
+
 .guide li {
   line-height: 40px;
 }
@@ -396,9 +399,11 @@ a {
 .guide-3 {
   grid-area: guide-3;
 }
+
 .guide-4 {
   grid-area: guide-4;
 }
+
 .guide-5 {
   display: flex;
   flex-direction: column;
@@ -412,24 +417,23 @@ a {
   color: black;
 }
 
-.newsletter-image{
+.newsletter-image {
   border: 5px solid rgba(189, 183, 183, 0.27);
   background-color: rgb(68, 67, 67);
   width: 674px;
   height: 400px;
   display: flex;
-    justify-content: center;
-    align-items: center;
-
+  justify-content: center;
+  align-items: center;
 }
 
-.guide-5 button{
+.guide-5 button {
   width: 262px;
-    height: 50px;
-    border-radius: 7px;
-    color: black;
-
+  height: 50px;
+  border-radius: 7px;
+  color: black;
 }
+
 .footer {
   grid-area: footer;
   background-color: rgba(58, 58, 58, 0.67);
