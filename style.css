@@ -9,7 +9,7 @@
 main {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 200px 500px 500px 500px 500px 500px 800px 300px 300px 300px 300px 300px 700px 800px 1000px;
+  grid-template-rows: 200px 500px 500px 500px 500px 500px 800px 300px 300px 300px 300px 500px 700px 800px 400px;
   grid-template-areas:
     "nav nav nav nav nav nav"
     "latest-1 latest-1 latest-1 latest-2 latest-2 latest-2"
@@ -87,10 +87,18 @@ nav > div {
 
 .latest-article-topic {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: center;
+    align-items: flex-start;
 }
+
+.outer-info {
+  display: flex;
+  margin-bottom: 50px;
+    margin-top: 88px;
+}
+
 
 .author-img {
   display: flex;
@@ -120,7 +128,6 @@ nav > div {
   padding: 50px;
   font-size: larger;
   font-weight: 600;
-  margin: 250px 0 0 -210px;
   border: 5px solid rgb(29, 29, 29);
 }
 
@@ -327,7 +334,7 @@ nav > div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 40px 0 0 40px;
+  padding: 101px 0 0 40px;
   grid-area: book;
   border: 5px solid rgb(29, 29, 29);
   background-color: rgb(58, 58, 58);
@@ -418,5 +425,28 @@ nav > div {
 }
 .footer {
   grid-area: footer;
-  background-color: red;
+  background-color: rgb(58, 58, 58);
+  border: 5px solid rgb(29, 29, 29);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px;
+}
+
+.footer ul {
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 40px;
+  width: 80%;
+  justify-content: center;
+}
+
+.footer ul li {
+  margin-left: 32px;
+  font-size: x-large;
+  line-height: 36px;
+}
+
+.footer ul li a {
+  text-decoration: none;
 }
