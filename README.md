@@ -41,16 +41,16 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Hemant soni**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
+- Github: [@githubhandle](https://github.com/hemant-soni-vst-au4)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Linkedin: [linkedin](https://www.linkedin.com/in/hemant-soni-97427b193/)
 
 👤 **Author2**
 
 - Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- Twitter: [@twitterhandle](https://twitter.com/Hemants63203059)
 - Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
 
 ## 🤝 Contributing
