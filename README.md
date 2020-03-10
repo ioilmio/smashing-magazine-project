@@ -2,7 +2,7 @@
 
 > One paragraph statement about the project.
 
-![screenshot](./app_screenshot.png)
+![screenshot](Screenshot.png)
 
 Additional description about the project and its features.
 
@@ -14,7 +14,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://rawcdn.githack.com/ioilmio/smashing-magazine-project/913207926e3532d74ee3ec40ada8de191663cfcd/index.html)
 
 
 ## Getting Started
