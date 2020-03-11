@@ -23,41 +23,25 @@ A grayscale heat map of the website that indicates which elements have the great
 **Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
 
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
 ## Authors
 
 👤 **Hemant soni**
 
-- Github: [@githubhandle](https://github.com/hemant-soni-vst-au4)
-- Twitter: [@twitterhandle](https://twitter.com/Hemants63203059)
+- Github: [@hemant-soni-vst-au4](https://github.com/hemant-soni-vst-au4)
+- Twitter: [@Hemants63203059](https://twitter.com/Hemants63203059)
 - Linkedin: [linkedin](https://www.linkedin.com/in/hemant-soni-97427b193/)
 
-👤 **Author2**
+👤 **Illuminato Salvatore**
 
-- Github: [@githubhandle](https://github.com/ioilmio)
-- Twitter: [@twitterhandle](https://twitter.com/ioilmio)
+- Github: [@ioilmio](https://github.com/ioilmio)
+- Twitter: [@ioilmio](https://twitter.com/ioilmio)
 - Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/ioilmio/smashing-magazine-project/issues).
 
 ## Show your support
 
