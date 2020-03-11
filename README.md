@@ -1,10 +1,10 @@
-# Project Name
+# Project:- Smashing magazine 
 
-> One paragraph statement about the project.
+> This project consists of building a heatmap of the Smashing magazine website
 
 ![screenshot](Screenshot.png)
 
-Additional description about the project and its features.
+A grayscale heat map of the website that indicates which elements have the greatest weight in the visual hierarchy.
 
 ## Built With
 
