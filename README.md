@@ -35,7 +35,7 @@ A grayscale heat map of the website that indicates which elements have the great
 
 - Github: [@ioilmio](https://github.com/ioilmio)
 - Twitter: [@ioilmio](https://twitter.com/ioilmio)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Linkedin: [linkedin](https://linkedin.com/in/illuminato-salvatore)
 
 ## 🤝 Contributing
 
