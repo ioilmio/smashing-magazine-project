@@ -8,9 +8,9 @@ A grayscale heat map of the website that indicates which elements have the great
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- HTML and CSS,
+- Grid and Flex,
+- UI and UX
 
 ## Live Demo
 
