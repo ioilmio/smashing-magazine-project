@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 200px 500px 500px 500px 500px 500px 800px 300px 300px 300px 300px 500px 700px 800px 400px;
+  grid-template-areas:
+    "nav nav nav nav nav nav"
+    "latest-1 latest-1 latest-1 latest-2 latest-2 latest-2"
+    "latest-3 latest-3 latest-3 latest-4 latest-4 latest-4"
+    "article-1 article-1 article-2 article-2 article-3 article-3"
+    "article-4 article-4 article-5 article-5 article-6 article-6"
+    "article-7 article-7 article-8 article-8 article-9 article-9"
+    "shipping shipping shipping shipping shipping shipping"
+    "person person person person person person "
+    "comments-1 comments-1 comments-1 comments-2 comments-2 comments-2"
+    "comments-3 comments-3 comments-3 comments-4 comments-4 comments-4"
+    "comments-5 comments-5 comments-5 comments-6 comments-6 comments-6"
+    "book book book book book-image book-image "
+    "guide-1 guide-1 guide-2 guide-2 guide-3 guide-3"
+    "guide-4 guide-4 guide-5 guide-5 guide-5 guide-5"
+    "footer footer footer footer footer footer";
+}
+
+nav {
+  grid-area: nav;
+  background-color: rgba(58, 58, 58, 0.67);
+  display: flex;
+  height: 200px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav > div {
+  background-color: rgb(68, 67, 67);
+  width: 150px;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header {
+  grid-column: 3 / 6;
+  grid-row: 1/2;
+  position: absolute;
+  top: 250px;
+  width: 250px;
+  left: 40%;
+}
+
+.header > h1 {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 0 auto;
+  color: #4e4a4a;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  height: 150px;
+
+  /* border: 5px solid rgb(29, 29, 29); */
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 120px;
+  justify-content: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 120px;
+}
+
+.latest-article-topic {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #313131;
+}
+
+.outer-info {
+  display: flex;
+  margin-bottom: 50px;
+  margin-top: 88px;
+}
+
+.author-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 25px;
+  background-color: rgb(68, 67, 67);
+  border: 5px solid rgba(189, 183, 183, 0.27);
+}
+
+.author-name {
+  display: flex;
+  align-items: center;
+  justify-self: start;
+  height: 30px;
+  width: auto;
+  padding: 25px;
+  background-color: rgb(68, 67, 67);
+  margin-left: 50px;
+  border: 5px solid rgba(189, 183, 183, 0.27);
+}
+
+.article-title {
+  justify-content: left;
+  align-items: center;
+  height: auto;
+  padding: 50px;
+  font-size: larger;
+  background-color: rgb(68, 67, 67);
+  font-weight: 600;
+  border: 5px solid rgba(189, 183, 183, 0.27);
+}
+
+.latest-1 {
+  background-color: rgb(58, 58, 58);
+  grid-area: latest-1;
+  border: 5px solid rgba(189, 183, 183, 0.27);
+}
+
+.latest-2 {
+  background-color: rgb(58, 58, 58);
+  grid-area: latest-2;
+  border: 5px solid rgba(189, 183, 183, 0.27);
+}
+
+.latest-3 {
+  background-color: rgb(58, 58, 58);
+  grid-area: latest-3;
+  border: 5px solid rgba(189, 183, 183, 0.27);
+}
+
+.latest-4 {
+  background-color: rgb(58, 58, 58);
+  grid-area: latest-4;
+  border: 5px solid rgba(189, 183, 183, 0.27);
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: #313131;
+  border: 5px solid rgba(189, 183, 183, 0.27);
+}
+
+.post p {
+  margin-top: 20px;
+}
+
+.post a {
+  text-decoration: none;
+  font-size: large;
+}
+
+.shipping-info p {
+  margin-bottom: 36px;
+}
+
+.post p:last-child {
+  font-size: large;
+  font-weight: 600;
+}
+
+.article-1 {
+  grid-area: article-1;
+}
+
+.article-2 {
+  grid-area: article-2;
+}
+
+.article-3 {
+  grid-area: article-3;
+}
+
+.article-4 {
+  grid-area: article-4;
+}
+
+.article-5 {
+  grid-area: article-5;
+}
+
+.article-6 {
+  grid-area: article-6;
+}
+
+.article-7 {
+  grid-area: article-7;
+}
+
+.article-8 {
+  grid-area: article-8;
+}
+
+.article-9 {
+  grid-area: article-9;
+}
+
+.shipping {
+  grid-area: shipping;
+  display: flex;
+  background-color: rgba(58, 58, 58, 0.67);
+  justify-content: center;
+}
+
+.shipping-info {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  align-items: center;
+  padding: 43px;
+}
+
+.shipping-info h1 {
+  text-align-last: center;
+}
+
+.shipping-info button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 262px;
+  height: 50px;
+  border-radius: 7px;
+  color: black;
+}
+
+.shipping-info .image {
+  border: 5px solid rgba(189, 183, 183, 0.27);
+  width: 674px;
+  height: 400px;
+  display: flex;
+  background-color: rgb(68, 67, 67);
+  justify-content: center;
+  align-items: center;
+}
+
+.person {
+  grid-area: person;
+  background-color: rgb(58, 58, 58);
+  display: flex;
+  padding: 24px;
+  border: 5px solid rgba(189, 183, 183, 0.27);
+}
+
+.person-image {
+  padding: 24px;
+  margin-left: 20px;
+  border: 5px solid rgba(189, 183, 183, 0.27);
+  background-color: rgb(68, 67, 67);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 324px;
+  height: 200px;
+}
+
+.person-content {
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-bottom: 64px;
+  font-size: large;
+}
+
+.comment {
+  background-color: rgb(58, 58, 58);
+  display: flex;
+  padding: 24px;
+  border: 5px solid rgba(189, 183, 183, 0.27);
+}
+
+.comment-image {
+  padding: 24px;
+  margin-left: 20px;
+  border: 5px solid rgba(189, 183, 183, 0.27);
+  background-color: rgb(68, 67, 67);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 324px;
+  height: 100px;
+}
+
+.comment-content {
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-bottom: 64px;
+  font-size: large;
+}
+
+.comments-1 {
+  grid-area: comments-1;
+}
+
+.comments-2 {
+  grid-area: comments-2;
+}
+
+.comments-3 {
+  grid-area: comments-3;
+}
+
+.comments-4 {
+  grid-area: comments-4;
+}
+
+.comments-5 {
+  grid-area: comments-5;
+}
+
+.comments-6 {
+  grid-area: comments-6;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 101px 0 0 40px;
+  grid-area: book;
+  border: 5px solid rgba(189, 183, 183, 0.27);
+  background-color: rgba(58, 58, 58, 0.67);
+}
+
+.book-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: book-image;
+  border: 5px solid rgba(189, 183, 183, 0.27);
+  background-color: rgb(68, 67, 67);
+}
+
+.book h2 {
+  margin: 35px 0 35px 0;
+}
+
+.book button {
+  width: 262px;
+  height: 50px;
+  border-radius: 7px;
+  color: black;
+}
+
+.guide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: larger;
+  padding: 25px;
+  background-color: rgb(58, 58, 58);
+  border: 5px solid rgba(189, 183, 183, 0.27);
+}
+
+.guide ul {
+  margin: 25px 0 0 -110px;
+}
+
+.guide li {
+  line-height: 40px;
+}
+
+.guide-1 {
+  grid-area: guide-1;
+}
+
+.guide-2 {
+  grid-area: guide-2;
+}
+
+.guide-3 {
+  grid-area: guide-3;
+}
+
+.guide-4 {
+  grid-area: guide-4;
+}
+
+.guide-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: larger;
+  padding: 60px;
+  grid-area: guide-5;
+  background-color: rgb(58, 58, 58);
+  border: 5px solid rgba(189, 183, 183, 0.27);
+  color: black;
+}
+
+.newsletter-image {
+  border: 5px solid rgba(189, 183, 183, 0.27);
+  background-color: rgb(68, 67, 67);
+  width: 674px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guide-5 button {
+  width: 262px;
+  height: 50px;
+  border-radius: 7px;
+  color: black;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: rgba(58, 58, 58, 0.67);
+  border: 5px solid rgba(189, 183, 183, 0.27);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px;
+}
+
+.footer ul {
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 40px;
+  width: 80%;
+  justify-content: center;
+}
+
+.footer ul li {
+  margin-left: 32px;
+  font-size: x-large;
+  line-height: 36px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+}
